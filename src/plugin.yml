@@ -1,0 +1,16 @@
+name: Easy_Fireworks
+version: 5.0
+author: Xer0
+main: at.xer0.EasyFireworks.Fireworks
+commands:
+  fw:
+    description: Spawn yourself some fireworks!
+permissions:
+  firework.*:
+    description: Gives access to all Easy Firework commands
+  firework.fillup:
+    description: Gives access to the fillup command
+  firework.give:
+    description: Gives access to the give command
+  firework.get:
+    description: Gives access to the give youself command
