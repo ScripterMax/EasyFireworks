@@ -94,7 +94,7 @@ public class RocketProvider {
 						
 						else
 						{
-							p.sendMessage(ChatColor.RED + "Found a known color! Using White instead!");
+							p.sendMessage(ChatColor.RED + "Unknown color! Using White instead!");
 							c.add(Color.WHITE);
 						}
 		}
@@ -193,7 +193,7 @@ public class RocketProvider {
 
         }else
         {
-			p.sendMessage(ChatColor.RED + "Not known power! Using smallest power instead!");
+			p.sendMessage(ChatColor.RED + "Unknown power! Using  power 0 instead!");
 			fm.setPower(0);
         }
 
