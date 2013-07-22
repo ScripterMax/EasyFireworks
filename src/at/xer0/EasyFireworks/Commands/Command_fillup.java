@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
 import at.xer0.EasyFireworks.Dispenser.Blocks;
-import at.xer0.EasyFireworks.Dispenser.FileManager;
+import at.xer0.EasyFireworks.Manager.FileManager;
 import at.xer0.EasyFireworks.util.RocketProvider;
 
 public class Command_fillup {

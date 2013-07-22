@@ -9,10 +9,10 @@ import java.net.URLConnection;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import at.xer0.EasyFireworks.Dispenser.FileManager;
 import at.xer0.EasyFireworks.Manager.CommandManager;
 import at.xer0.EasyFireworks.Manager.ConfigManager;
 import at.xer0.EasyFireworks.Manager.EventManager;
+import at.xer0.EasyFireworks.Manager.FileManager;
 import at.xer0.EasyFireworks.util.GlobalVars;
 import at.xer0.EasyFireworks.util.Logger;
 

@@ -13,7 +13,6 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 
 import at.xer0.EasyFireworks.Dispenser.Blocks;
-import at.xer0.EasyFireworks.Dispenser.FileManager;
 import at.xer0.EasyFireworks.util.GlobalVars;
 import at.xer0.EasyFireworks.util.RocketProvider;
 

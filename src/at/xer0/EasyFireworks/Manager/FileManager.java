@@ -1,4 +1,4 @@
-package at.xer0.EasyFireworks.Dispenser;
+package at.xer0.EasyFireworks.Manager;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,6 +10,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.block.Dispenser;
 
+import at.xer0.EasyFireworks.Dispenser.Blocks;
 import at.xer0.EasyFireworks.util.Logger;
 
 public class FileManager {

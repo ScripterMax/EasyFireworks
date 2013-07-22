@@ -7,7 +7,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import at.xer0.EasyFireworks.Dispenser.FileManager;
 import at.xer0.EasyFireworks.util.GlobalVars;
 
 public class ConfigManager {
