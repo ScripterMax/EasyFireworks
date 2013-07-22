@@ -1,4 +1,4 @@
-package at.xer0.Commands;
+package at.xer0.EasyFireworks.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.block.Block;
@@ -6,9 +6,9 @@ import org.bukkit.block.Dispenser;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
-import at.xer0.Dispenser.Blocks;
-import at.xer0.Dispenser.FileManager;
-import at.xer0.util.RocketProvider;
+import at.xer0.EasyFireworks.Dispenser.Blocks;
+import at.xer0.EasyFireworks.Dispenser.FileManager;
+import at.xer0.EasyFireworks.util.RocketProvider;
 
 public class Command_fillup {
 	

@@ -1,10 +1,10 @@
-package at.xer0.Commands;
+package at.xer0.EasyFireworks.Commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-import at.xer0.util.RocketProvider;
+import at.xer0.EasyFireworks.util.RocketProvider;
 
 public class Command_givedef {
 	

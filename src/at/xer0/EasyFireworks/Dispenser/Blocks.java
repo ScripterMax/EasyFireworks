@@ -1,4 +1,4 @@
-package at.xer0.Dispenser;
+package at.xer0.EasyFireworks.Dispenser;
 
 import java.util.ArrayList;
 

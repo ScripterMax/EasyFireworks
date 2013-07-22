@@ -1,21 +1,21 @@
-package at.xer0.util;
+package at.xer0.EasyFireworks.util;
 
 import org.bukkit.entity.Player;
 
-import at.xer0.Commands.Command_colors;
-import at.xer0.Commands.Command_effects;
-import at.xer0.Commands.Command_fillup;
-import at.xer0.Commands.Command_getdef;
-import at.xer0.Commands.Command_getrandom;
-import at.xer0.Commands.Command_givedef;
-import at.xer0.Commands.Command_giverandom;
-import at.xer0.Commands.Command_help;
-import at.xer0.Commands.Command_lists;
-import at.xer0.Commands.Command_power;
-import at.xer0.Commands.Command_usage;
-import at.xer0.ServerCommands.ServerCommand_givedef;
-import at.xer0.ServerCommands.ServerCommand_giverandom;
-import at.xer0.ServerCommands.ServerCommand_help;
+import at.xer0.EasyFireworks.Commands.Command_colors;
+import at.xer0.EasyFireworks.Commands.Command_effects;
+import at.xer0.EasyFireworks.Commands.Command_fillup;
+import at.xer0.EasyFireworks.Commands.Command_getdef;
+import at.xer0.EasyFireworks.Commands.Command_getrandom;
+import at.xer0.EasyFireworks.Commands.Command_givedef;
+import at.xer0.EasyFireworks.Commands.Command_giverandom;
+import at.xer0.EasyFireworks.Commands.Command_help;
+import at.xer0.EasyFireworks.Commands.Command_lists;
+import at.xer0.EasyFireworks.Commands.Command_power;
+import at.xer0.EasyFireworks.Commands.Command_usage;
+import at.xer0.EasyFireworks.ServerCommands.ServerCommand_givedef;
+import at.xer0.EasyFireworks.ServerCommands.ServerCommand_giverandom;
+import at.xer0.EasyFireworks.ServerCommands.ServerCommand_help;
 
 public class CommandDistributer {
 	

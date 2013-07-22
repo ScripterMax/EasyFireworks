@@ -1,4 +1,4 @@
-package at.xer0.util;
+package at.xer0.EasyFireworks.util;
 
 public class Logger {
 	

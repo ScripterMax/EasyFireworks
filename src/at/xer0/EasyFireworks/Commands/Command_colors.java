@@ -1,4 +1,4 @@
-package at.xer0.Commands;
+package at.xer0.EasyFireworks.Commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -14,7 +14,7 @@ public class Command_colors {
 		p.sendMessage(ChatColor.RED + "r = Red");
 		p.sendMessage(ChatColor.WHITE + "w = White");
 		p.sendMessage(ChatColor.BLACK + "bl = Black");
-		p.sendMessage(ChatColor.GREEN + "#FFFFFF = White :D (HEX)");
+		p.sendMessage(ChatColor.GREEN + "#FFFFFF = White (HEX)");
 		p.sendMessage(ChatColor.DARK_PURPLE + "#################");
 
 	}

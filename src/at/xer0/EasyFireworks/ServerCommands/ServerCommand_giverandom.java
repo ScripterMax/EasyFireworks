@@ -1,11 +1,11 @@
-package at.xer0.ServerCommands;
+package at.xer0.EasyFireworks.ServerCommands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
-import at.xer0.util.Logger;
-import at.xer0.util.RocketProvider;
+import at.xer0.EasyFireworks.util.Logger;
+import at.xer0.EasyFireworks.util.RocketProvider;
 
 public class ServerCommand_giverandom {
 	

@@ -1,4 +1,4 @@
-package at.xer0.util;
+package at.xer0.EasyFireworks.Manager;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import at.xer0.Dispenser.FileManager;
+import at.xer0.EasyFireworks.Dispenser.FileManager;
+import at.xer0.EasyFireworks.util.GlobalVars;
 
 public class ConfigManager {
 	
@@ -30,7 +31,8 @@ public class ConfigManager {
 			out = new BufferedWriter(new FileWriter(configFile));
 			
 			out.write("checkForUpdate:true");
-			
+
+			out.flush();
 			out.close();
 		}
 		catch(Exception e)
@@ -63,6 +65,7 @@ public class ConfigManager {
 					GlobalVars.checkForUpdate = Boolean.parseBoolean(args[1]);
 				}
 				
+
 			}
 			
 			reader.close();

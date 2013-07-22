@@ -1,10 +1,12 @@
-package at.xer0.util;
+package at.xer0.EasyFireworks.Manager;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import at.xer0.EasyFireworks.util.CommandDistributer;
 
 public class CommandManager implements CommandExecutor {
 

@@ -1,4 +1,4 @@
-package at.xer0.Dispenser;
+package at.xer0.EasyFireworks.Dispenser;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,16 +10,19 @@ import org.bukkit.Bukkit;
 import org.bukkit.block.Block;
 import org.bukkit.block.Dispenser;
 
-import at.xer0.util.Logger;
+import at.xer0.EasyFireworks.util.Logger;
 
 public class FileManager {
 	
-	public static File dir = new File("plugins/Easy_Fireworks");
+	public static File dir = new File("plugins/EasyFireworks");
 	public static File dispenserFile = new File(dir,"dispensers.data");
+
 
 	
 	public static void loadDispensers()
 	{
+	
+		
 		if(!dispenserFile.exists())
 		{
 			try
@@ -43,6 +46,8 @@ public class FileManager {
 				{
 					String line = reader.readLine();
 					
+					
+						
 					String[] args = line.split(",");
 					
 					Block b = Bukkit.getServer().getWorld(args[0]).getBlockAt(Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]));
@@ -76,7 +81,11 @@ public class FileManager {
 			{
 				Block b = dis.getBlock();
 				String output = b.getWorld().getName() + "," + b.getLocation().getBlockX() + "," + b.getLocation().getBlockY() + "," + b.getLocation().getBlockZ();
-				out.write(output + "\n");
+				
+				
+				
+				
+				out.write(output+"\n");
 			}
 			
 			out.close();

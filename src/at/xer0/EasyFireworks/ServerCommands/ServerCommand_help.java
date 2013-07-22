@@ -1,6 +1,6 @@
-package at.xer0.ServerCommands;
+package at.xer0.EasyFireworks.ServerCommands;
 
-import at.xer0.util.Logger;
+import at.xer0.EasyFireworks.util.Logger;
 
 
 public class ServerCommand_help {

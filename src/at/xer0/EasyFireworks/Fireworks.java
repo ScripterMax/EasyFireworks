@@ -9,12 +9,12 @@ import java.net.URLConnection;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import at.xer0.Dispenser.FileManager;
-import at.xer0.util.CommandManager;
-import at.xer0.util.ConfigManager;
-import at.xer0.util.EventManager;
-import at.xer0.util.GlobalVars;
-import at.xer0.util.Logger;
+import at.xer0.EasyFireworks.Dispenser.FileManager;
+import at.xer0.EasyFireworks.Manager.CommandManager;
+import at.xer0.EasyFireworks.Manager.ConfigManager;
+import at.xer0.EasyFireworks.Manager.EventManager;
+import at.xer0.EasyFireworks.util.GlobalVars;
+import at.xer0.EasyFireworks.util.Logger;
 
 
 public class Fireworks extends JavaPlugin implements Listener
@@ -22,6 +22,7 @@ public class Fireworks extends JavaPlugin implements Listener
 	
 	public void onEnable()
 	{
+
 		getCommand("fw").setExecutor(new CommandManager());
 		FileManager.loadDispensers();
 		getServer().getPluginManager().registerEvents(new EventManager(), this);

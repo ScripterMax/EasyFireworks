@@ -1,17 +1,21 @@
-package at.xer0.util;
+package at.xer0.EasyFireworks.Manager;
 
 import org.bukkit.ChatColor;
 import org.bukkit.block.Dispenser;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockDispenseEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.Inventory;
 
-import at.xer0.Dispenser.Blocks;
-import at.xer0.Dispenser.FileManager;
+import at.xer0.EasyFireworks.Dispenser.Blocks;
+import at.xer0.EasyFireworks.Dispenser.FileManager;
+import at.xer0.EasyFireworks.util.GlobalVars;
+import at.xer0.EasyFireworks.util.RocketProvider;
 
 public class EventManager implements Listener{
 	
@@ -67,11 +71,7 @@ public class EventManager implements Listener{
 								Blocks.dispensers.remove(di);
 								event.getPlayer().sendMessage(ChatColor.RED+ "You have destroyed an auto-refill dispenser!");
 								FileManager.saveDispensers();
-								break;
-							}else
-							{
-								event.setCancelled(true);
-								event.getPlayer().sendMessage(ChatColor.RED + "You don't have permission to destroy this dispenser!");
+								return;
 							}
 							
 						}
@@ -104,6 +104,33 @@ public class EventManager implements Listener{
 				e.getPlayer().sendMessage(ChatColor.RED +"An update for " + ChatColor.GREEN + "EasyFireworks " + ChatColor.RED + "is available! You can get it here:");
 				e.getPlayer().sendMessage(ChatColor.RED + "http://dev.bukkit.org/server-mods/easy-fireworks/");
 				GlobalVars.notifiedPlayers.add(e.getPlayer());
+			}
+		}
+	}
+	
+	@EventHandler
+	public void onPlayerInteract(PlayerInteractEvent e)
+	{		
+		if(e.getPlayer().isOp()){
+			return;
+		}
+		
+		
+		for(Dispenser s : Blocks.dispensers)
+		{
+			if(e.getClickedBlock().getLocation().toString().equalsIgnoreCase(s.getLocation().toString()))
+			{
+				e.setCancelled(true);
+				
+				if(e.getAction() == Action.LEFT_CLICK_BLOCK){
+					e.getPlayer().sendMessage(ChatColor.RED + "You don't have permission to destroy this dispenser!");
+				}
+				
+				if(e.getAction() == Action.RIGHT_CLICK_BLOCK){
+					e.getPlayer().sendMessage(ChatColor.RED + "You don't have permission to open this dispenser!");
+				}
+				
+				return;
 			}
 		}
 	}
