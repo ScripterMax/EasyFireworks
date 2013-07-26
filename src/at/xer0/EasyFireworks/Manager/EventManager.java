@@ -114,13 +114,21 @@ public class EventManager implements Listener{
 			return;
 		}
 		
+		if(e.getAction() == Action.LEFT_CLICK_AIR){
+			return;
+		}
+		
+		if(e.getAction() == Action.RIGHT_CLICK_AIR){
+			return;
+		}
+		
 		
 		for(Dispenser s : Blocks.dispensers)
 		{
 			if(e.getClickedBlock().getLocation().toString().equalsIgnoreCase(s.getLocation().toString()))
 			{
 				e.setCancelled(true);
-				
+
 				if(e.getAction() == Action.LEFT_CLICK_BLOCK){
 					e.getPlayer().sendMessage(ChatColor.RED + "You don't have permission to destroy this dispenser!");
 				}

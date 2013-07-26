@@ -1,4 +1,5 @@
-Staring with version 5.1:
+5.2:
+	*Fixed bug: Interacting with a auto-refill fireworks dispenser causes errors.
 5.1:
 	*NonOps now can't open a auto-refill dispenser anymore.
 	*Compiled for 1.6.2	
