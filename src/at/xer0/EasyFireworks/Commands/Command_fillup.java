@@ -17,7 +17,7 @@ public class Command_fillup {
 		Block disp = p.getTargetBlock(null, 20);
 		if(disp.getTypeId() == 0)
 		{
-			p.sendMessage(ChatColor.RED +"This Block is too far away!");
+			p.sendMessage(ChatColor.RED +"This Block is too far away for the plugin to reach!");
 		}else
 		{
 			if(disp.getTypeId() == 23)
